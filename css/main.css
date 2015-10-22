@@ -1,0 +1,361 @@
+/*Globals*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+}
+
+img{
+	width: 100%;
+}
+
+.clearfix:before, .clearfix:after{
+	content:"";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+h1{
+	font-size: 5em;
+	letter-spacing: 15px;
+	line-height: 1.2em;
+}
+ 
+h2{
+	font-size: 2em;
+	margin-bottom: 1%;
+}
+
+h3{
+	font-size: 1.3em;
+}
+
+h2, h3{
+	font-weight: 400;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	color: #bebebe;
+	line-height: 1.25em;
+}
+
+/* ----- Repeated Font Style/Family Classes ----- */
+.teko-font {
+	font-family: "Teko", Helvetica, Arial, sans-serif;
+}
+
+.upper{
+	text-transform: uppercase;
+}
+
+/*Header*/
+header.topHeader{
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	height: 40px;
+}
+
+.header-container {
+	max-width: 70%;
+	margin: 0% auto;
+}
+
+.logo{
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+header nav{
+	float: right;
+	padding-top: 10px;
+}
+
+header nav li{
+	display: inline-block;
+	font-size: 0.75em;
+	margin-right: 10px;
+}
+
+header nav li.active{
+	padding-bottom: 10px;
+	border-bottom: 4px solid #f63c3c;
+}
+
+header nav li a{
+	color: #d7d7d7;
+}
+
+header nav li a:hover{
+	color: #f63c3c;
+}
+
+header nav li.active a{
+	color: #f63c3c;	
+}
+
+.hero{
+	background: #7d797c url(../img/background.jpg) center center no-repeat fixed;
+	background-size: cover;
+	width: 100%;
+	height: 750px;	
+}
+
+.title {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.title-text{
+	text-align: center;
+}
+
+.title-text li{
+	display: none;
+}
+
+.title-text li.active{
+	display: inline-block;
+	margin-top: 18%;
+}
+
+.title-text p{
+	display: block;
+	width: 60%;
+	margin: 1% auto 4%;
+}
+
+.title-text a{
+	color: #000;
+	background-color: #fff;
+	padding: 8px 40px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.title-text a:hover{
+	background-color: #f63c3c;
+	color: #fff;
+}
+
+.carousel-nav{
+	margin: 8% auto 0%;
+	text-align: center;
+}
+
+.carousel-nav li{
+	display: inline-block;
+	width: 	2%;
+	height: 3px;
+	background-color: #64544e;
+	margin: 0 0.25%;
+}
+
+.carousel-nav li.active{
+	background-color: #fff;
+}
+
+.carousel-nav li:hover{
+	background-color: #f63c3c;
+}
+
+.my-projects article{
+	text-align: center;
+}
+
+.my-projects figure{
+	position: relative;
+}
+.my-projects figcaption{
+	display: none;
+	background-color: #f63c3c;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	border: 12px solid black;
+} 
+
+.action-call p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.75em;
+	line-height: 14px;
+}
+
+.my-projects figcaption h4{
+	font-size: 1.5em;
+	margin-top: 20%;
+	letter-spacing: 2px;
+}
+
+.my-projects figcaption p{
+	font-size: 0.75em;
+	margin-top: 12%;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.my-projects figure:hover figcaption{
+	display: block;
+}
+
+.my-projects figcaption h4 span{
+	display: block;
+}
+
+.my-projects .description{
+	width: 70%;
+	margin: 0% auto 1%;
+	font-family: 'Roboto', sans-serif;
+	font-size: .7em;
+	line-height: 16px;
+	color: #555;
+}
+
+.my-projects h2, h3{
+	text-align: center;
+	color: #000;
+	letter-spacing: 2px;
+	width: 60%;
+	margin: 2% auto 1%;
+}
+
+.my-projects .left{
+	float: left;
+	width: 48%;
+	margin: 0.5% .25% 0.5% 1.33%;
+}
+
+.my-projects .right{
+	float: right;
+	width: 48%;
+	margin: 0.5% 1.33% 0.5% 0.25%;
+}
+
+.show-more{
+	width: 11%;
+	margin: 3% auto;
+}
+
+.show-more a{
+	display: block;
+	text-align: center;
+	color: #f63c3c;
+	font-size: 1.25em;
+	border-bottom: 4px solid #f63c3c; 
+	font-weight: 400;
+}
+
+.show-more a:hover{
+	color: #000;
+	border-bottom: 4px solid #000; 
+}
+
+.action-call{
+	margin-top: 2%;
+	background-color: #f63c3c;
+	text-align: center;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+
+.action-call h2{
+	letter-spacing: 2px;
+	font-weight: 300;
+	margin: 0% auto 1%;
+}
+
+.action-call p{
+	color: #fbbaba;
+	font-size: 0.75em;
+	margin: 0% auto 2%;
+}
+.action-call a{
+	color: #000;
+	background-color: #fff;
+	padding: 8px 40px;
+	letter-spacing: 2px;
+	font-weight: 400;
+}
+
+.action-call a:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+.connected h2{
+	color: #000;
+	letter-spacing: 2px;
+	margin: 3% 0 0.5%;
+}
+
+.connected p {
+	font-size: 0.75em;
+	width: 90%;
+}
+.connected ul{
+	text-align: center;
+	margin-top: 4%;
+	}
+
+.connected h2, .connected p{
+	margin-left: 10%;
+}	
+.connected ul li{
+	display: inline-block;
+	margin: 0 1%;
+	background-color: #30282a;
+	padding: 25px 0px;
+	width: 18%;
+	letter-spacing: 2px;
+}
+
+.connected ul li:hover{
+	background-color: #f63c3c;
+}
+
+.connected i{
+	display: block;
+	padding-bottom: 5px;
+}
+
+.connected i, a {
+	color: #fff;
+}
+
+footer{
+	background-color: #fff;
+	width: 100%;
+	padding: 20px;
+}
+
+footer p{
+	font-size: 0.7em;
+	margin-left: 21%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
